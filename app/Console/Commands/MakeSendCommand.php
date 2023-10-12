@@ -64,6 +64,8 @@ class MakeSendCommand extends Command
                 }
                 $userEmail = User::where('id',$userObj)->pluck('email');
             }
+            $value->sent = true;
+            $value->save();
         }
         return Command::SUCCESS;
     }
