@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "629a77e0-e312-4670-bd38-b0b5911047bd",
+		"name": "subscription",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1838043",
+		"_collection_link": "https://cloudy-meadow-933425.postman.co/workspace/New-Team-Workspace~6b86ddda-7cb7-4e02-82d4-c4954308fa33/collection/1838043-629a77e0-e312-4670-bd38-b0b5911047bd?action=share&source=collection_link&creator=1838043"
+	},
+	"item": [
+		{
+			"name": "create post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "desc",
+							"value": "tes",
+							"type": "text"
+						},
+						{
+							"key": "website_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/post/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"post",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscribe website",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/subscribe/website",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"subscribe",
+						"website"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -31,19 +31,6 @@ class MakeSendCommand extends Command
      */
     public function handle()
     {
-        // Mail::raw('This is a test email.', function ($message) {
-        //     $message->to('vchampanery@gmail.com')->subject('Test Email');
-        // });
-
-        // $toEmail = $this->argument('to');
-        // $subject = $this->argument('subject');
-        // $body = $this->argument('body');
-
-        // // Send the email with the specified body
-        // Mail::raw($body, function ($message) use ($toEmail, $subject) {
-        //     $message->to($toEmail)->subject($subject);
-        // });
-
         $postObj = Post::where('sent',false)->get();
         foreach($postObj as $key => $value){
             $value->website_id;

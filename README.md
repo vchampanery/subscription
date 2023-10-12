@@ -28,3 +28,13 @@
   ```
     php artisan send:story
   ```
+- Please do find collection for Postman in root folder.
+ 
+  ```
+    subscription.postman_collection.json
+  ```
+- Please do find database for Reference incase migration not working.
+ 
+  ```
+    subscription.sql
+  ``
